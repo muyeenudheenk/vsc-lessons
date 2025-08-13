@@ -1,0 +1,9 @@
+vsc open >go to file> open folder >import the file > start working> save 
+
+it will display the works on new folder that we imported .
+go to terminal > git init > git initialized 
+then > ls > check there is the approppriate file there 
+ https://github.com/muyeenudheenk/gibri.git
+git status 
+git add <file name> to add untracked files into your repoitory
+
