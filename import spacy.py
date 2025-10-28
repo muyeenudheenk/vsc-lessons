@@ -1,18 +1,20 @@
-import spaCy
-from spaCy.lang.en.stop_words import STOP_WORDS
+import spacy
+from spacy.lang.en.stop_words import STOP_WORDS
 from string import punctuation
 from collections import Counter
 from heapq import nlargest
 
 nlp = spacy.load('en_core_web_sm')
 
-introduction_text = ('London is the capital of the UK, '
-                    'with a population of nearly 9 million people. '
-                    'London is one of the most diverse cities in the world. '
-                    'London has over 100 museums, galleries and exhibitions. '
-                    'London has 40 universities and higher education institutions. '
-                    'London has over 15,500 restaurants, serving Italian, Indian, Thai and Chinese cuisines. '
-                    'London is also one of the world\'s capitals of finance, fashion, arts and entertainment.')
+introduction_text = (
+    'London is the capital of the UK, '
+    'with a population of nearly 9 million people. '
+    'London is one of the most diverse cities in the world. '
+    'London has over 100 museums, galleries and exhibitions. '
+    'London has 40 universities and higher education institutions. '
+    'London has over 15,500 restaurants, serving Italian, Indian, Thai and Chinese cuisines. '
+    'London is also one of the world\'s capitals of finance, fashion, arts and entertainment.'
+)
 
 doc = nlp(introduction_text)
 
